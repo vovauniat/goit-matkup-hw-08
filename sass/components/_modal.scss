@@ -1,0 +1,45 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 528px;
+  min-height: 580px;
+  background-color: #ffffff;
+  border-radius: 4px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.modal-close-but {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  display: flex;
+  align-items: center;
+}
+
+.close-icon {
+  width: 30px;
+  height: 30px;
+
+  .modal-close-but &:hover,
+  .modal-close-but &:focus {
+    fill: var(--accent-color);
+  }
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: none;
+  pointer-events: none;
+}

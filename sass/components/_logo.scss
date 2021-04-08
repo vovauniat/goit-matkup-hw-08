@@ -1,0 +1,22 @@
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+  margin-right: 93px;
+
+  .footer & {
+    margin-right: -93px;
+    margin-bottom: 20px;
+  }
+}
+
+.logo-head {
+  color: #212121;
+}
+
+.logo-fut {
+  color: #ffffff;
+}

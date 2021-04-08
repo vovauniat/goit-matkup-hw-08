@@ -1,0 +1,132 @@
+.footer {
+  background-color: var(--bd-color-sec);
+  padding-top: 60px;
+  padding-bottom: 55px;
+
+  & .container {
+    text-align: left;
+  }
+}
+
+.fut-all {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: baseline;
+}
+
+.footer-adress-list {
+  margin-top: 20px;
+}
+
+.footer-adress-list__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.footer-adress-list__place {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.footer-adress-list__link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.fut-social {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: 70px;
+}
+.fut-social__head {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.fut-social-list {
+  padding-top: 20px;
+}
+.fut-social-list-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.fut-social-list-icon {
+  fill: #ffffff;
+}
+
+.fut-form-blok {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 93px;
+}
+
+.hed-fut-form {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.fut-form {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.fut-form-field {
+  margin-right: 12px;
+}
+
+.fut-form-input {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: transparent;
+  border-radius: 4px;
+  padding-left: 16px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fut-form-btn {
+  display: flex;
+  align-items: center;
+  align-self: center;
+
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+
+  padding: 10px 28px;
+  color: #ffffff;
+  background-color: #2196f3;
+  width: 200;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.fut-form-icon {
+  margin-left: 10px;
+  fill: #ffffff;
+}
