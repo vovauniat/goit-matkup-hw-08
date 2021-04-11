@@ -55,3 +55,33 @@
   color: var(--secondary-color);
   padding-top: 10px;
 }
+
+@media screen and (max-width: 767px) {
+  .features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .features-list {
+    display: block;
+
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+
+  .features-list__item {
+    margin-left: 0px;
+    margin-top: 0px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  .features-list__head {
+    text-align: center;
+  }
+  .features-list__icon-block {
+    width: 450px;
+    height: 120px;
+  }
+}

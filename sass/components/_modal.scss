@@ -43,3 +43,9 @@
   visibility: none;
   pointer-events: none;
 }
+
+@media screen and (max-width: 767px) {
+  .modal {
+    min-width: 450px;
+  }
+}

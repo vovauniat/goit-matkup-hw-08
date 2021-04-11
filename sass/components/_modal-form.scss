@@ -144,3 +144,10 @@
     background-color: #188ce8;
   }
 }
+@media screen and (max-width: 767px) {
+  .modal-form-check-desc {
+    font-size: 12px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+  }
+}

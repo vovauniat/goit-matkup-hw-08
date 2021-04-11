@@ -221,6 +221,12 @@ img {
   pointer-events: none;
 }
 
+@media screen and (max-width: 767px) {
+  .modal {
+    min-width: 450px;
+  }
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -367,6 +373,14 @@ img {
 
 .modal-form-btn:hover, .modal-form-btn:focus {
   background-color: #188ce8;
+}
+
+@media screen and (max-width: 767px) {
+  .modal-form-check-desc {
+    font-size: 12px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+  }
 }
 
 .main {
@@ -516,11 +530,23 @@ img {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./img/heromob.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: auto;
+    min-width: 480px;
     height: auto;
     padding-top: 118px;
     padding-bottom: 118px;
+    text-align: center;
   }
+}
+
+.hero-title {
+  margin-bottom: 30px;
+  font-family: var(--main-font);
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .features {
@@ -577,6 +603,32 @@ img {
   letter-spacing: 0.03em;
   color: var(--secondary-color);
   padding-top: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .features-list {
+    display: block;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  .features-list__item {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  .features-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .features-list__head {
+    text-align: center;
+  }
+  .features-list__icon-block {
+    width: 450px;
+    height: 120px;
+  }
 }
 
 .about {
