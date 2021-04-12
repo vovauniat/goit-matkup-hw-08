@@ -683,58 +683,58 @@ img {
   }
 }
 
-.reg-cust {
-  background-color: var(--bd-color-pri);
-  padding-top: var(--section-pt);
-  padding-bottom: var(--section-pb);
-}
-
-.title-cust {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  color: var(--main-color);
-  margin-bottom: 50px;
-}
-
-.cust-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: -30px;
-}
-
-.cust-list__item {
-  margin-left: 30px;
-}
-
-.cust-list__link {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  flex-basis: calc(100% / 6 - 30px);
-  width: 170px;
-  height: 90px;
-  border: 1px solid #afb1b8;
-  box-sizing: border-box;
-  border-radius: 4px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.cust-list__link:hover, .cust-list__link:focus {
-  border-color: var(--accent-color);
-}
-
-.cust-list__icon {
-  fill: #afb1b8;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.cust-list__link:hover .cust-list__icon,
-.cust-list__link:focus .cust-list__icon {
-  fill: var(--accent-color);
+@media screen and (max-width: 767px) {
+  .reg-cust {
+    background-color: var(--bd-color-pri);
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  .title-cust {
+    text-align: center;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+    margin-bottom: 30px;
+  }
+  .cust-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .cust-list :nth-child(2n) {
+    margin-left: 30px;
+  }
+  .cust-list__item {
+    flex-basis: calc(100% / 2 - 30px);
+    width: 210px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .cust-list__item:hover, .cust-list__item:focus {
+    border-color: var(--accent-color);
+  }
+  .cust-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  .cust-list__icon {
+    fill: #afb1b8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .cust-list__link:hover .cust-list__icon,
+  .cust-list__link:focus .cust-list__icon {
+    fill: var(--accent-color);
+  }
 }
 
 .footer {
