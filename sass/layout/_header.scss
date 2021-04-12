@@ -5,6 +5,7 @@
   background-color: var(--bd-color-pri);
   padding-top: 16px;
   padding-bottom: 16px;
+  border-bottom: 1px solid #ececec;
 }
 
 @media screen and (max-width: 767px) {
@@ -58,6 +59,7 @@
   }
 
   .mobile-menu {
+    z-index: 1;
     position: fixed;
     top: 0;
     left: 50%;
