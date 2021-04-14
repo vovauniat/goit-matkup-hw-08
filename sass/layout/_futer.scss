@@ -1,3 +1,4 @@
+//===================MOBILE======================//
 @media screen and (max-width: 767px) {
   .footer {
     background-color: var(--bd-color-sec);
@@ -94,6 +95,143 @@
     display: flex;
     align-items: center;
     margin: auto;
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+
+    padding: 10px 28px;
+    color: #ffffff;
+    background-color: #2196f3;
+    min-width: 200px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  .fut-form-icon {
+    margin-left: 10px;
+    fill: #ffffff;
+  }
+}
+//===================TABLET======================//
+
+@media screen and (min-width: 768px) {
+  .footer {
+    background-color: var(--bd-color-sec);
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .fut-all {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+  .com-blok {
+    text-align: center;
+    margin-left: 76px;
+  }
+  .footer-adress-list {
+    margin-top: 20px;
+  }
+
+  .footer-adress-list__item {
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+
+  .footer-adress-list__place {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
+  .footer-adress-list__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .fut-social {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-right: 89px;
+  }
+  .fut-social__head {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    text-align: center;
+  }
+  .fut-social-list {
+    padding-top: 20px;
+  }
+  .fut-social-list-link {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .fut-social-list-icon {
+    fill: #ffffff;
+  }
+
+  // .fut-form-blok {
+  // }
+  .fut-form-blok {
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hed-fut-form {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .fut-form {
+    margin-top: 20px;
+  }
+  // .fut-form-field {
+  // }
+
+  .fut-form-input {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+    border-radius: 4px;
+    padding-left: 16px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .fut-form-btn {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+
     font-family: var(--main-font);
     font-weight: 700;
     font-size: 16px;
