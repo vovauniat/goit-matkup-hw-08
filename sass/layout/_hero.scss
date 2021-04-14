@@ -19,6 +19,14 @@
     background-size: cover;
   }
 }
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("./img/heromob2x.jpg");
+  }
+}
 .hero-title {
   margin-bottom: 30px;
   font-family: var(--main-font);
@@ -30,7 +38,7 @@
   color: #ffffff;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
     background-color: #c4c4c4;
     background-image: linear-gradient(
@@ -40,6 +48,14 @@
       url(./img/herotab.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: url("./img/herotab2x.jpg");
+    }
   }
   .hero-title {
     margin-bottom: 40px;
@@ -53,28 +69,40 @@
     color: #ffffff;
   }
 }
-// .hero {
-//   background-color: #c4c4c4;
-//   background-image: linear-gradient(
-//       rgba(47, 48, 58, 0.4),
-//       rgba(47, 48, 58, 0.4)
-//     ),
-//     url(./img/herophoto.jpg);
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   width: auto;
-//   height: 600px;
-//   padding-top: 200px;
-//   padding-bottom: 200px;
-// }
-// .hero-title {
-//   margin-bottom: 40px;
-//   text-align: center;
-//   font-family: var(--main-font);
-//   font-weight: 900;
-//   font-size: 44px;
-//   line-height: 1.36;
-//   letter-spacing: 0.06em;
-//   text-transform: uppercase;
-//   color: #ffffff;
-// }
+//============DESK===========//
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-color: #c4c4c4;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(./img/herodesk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: url("./img/herodesk2x.jpg");
+    }
+  }
+
+  .hero-title {
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: var(--main-font);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}

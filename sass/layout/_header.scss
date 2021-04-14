@@ -7,7 +7,7 @@
   padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
 }
-
+//====================MOBIL================//
 @media screen and (max-width: 767px) {
   .navigation-list {
     display: none;
@@ -147,8 +147,8 @@
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
-
-@media screen and (min-width: 768px) {
+//=================TAB=================//
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .header {
     background-color: #ffffff;
     padding-top: 21px;
@@ -248,6 +248,117 @@
     color: var(--secondary-color);
 
     transition: var(--main-anim);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+}
+//===================DESK=====================//
+@media screen and (min-width: 1200px) {
+  .burger-btn {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .header {
+    background-color: #ffffff;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border: 1px solid #ececec;
+
+    & .logo {
+      margin-right: 93px;
+    }
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  .navigation-list {
+    display: flex;
+    align-items: center;
+  }
+
+  .navigation-list__item {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  .navigation-list__link {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-color);
+
+    transition: var(--main-anim);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+
+  .accent {
+    &::after {
+      display: block;
+      position: absolute;
+      content: "";
+      height: 4px;
+      width: 100%;
+      background-color: #2196f3;
+      margin-top: 28px;
+      border-radius: 2px;
+    }
+  }
+
+  .kontact-list {
+    display: flex;
+    align-items: center;
+    padding-left: 305px;
+  }
+
+  .kontact-list__item {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  .kontact-list__link {
+    transition: var(--main-anim);
+  }
+
+  .kontact-list__icon {
+    width: auto;
+    height: auto;
+    padding-right: 10px;
+    fill: var(--secondary-color);
+
+    .kontact-list__link:hover &,
+    .kontact-list__link:focus & {
+      fill: var(--accent-color);
+    }
+  }
+
+  .kontact-list__link {
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-color);
 
     &:hover,
     &:focus {
